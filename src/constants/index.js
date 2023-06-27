@@ -1,4 +1,4 @@
-import {mobile,backend,creator,web,javascript,typescript,html,css,reactjs,redux,tailwind,nodejs,mongodb,git,figma,docker,meta,starbucks,tesla,shopify,carrent,jobit,tripguide,threejs} from "../assets";
+import { backend, web, javascript, typescript, html, css, reactjs, redux, nodejs, mongodb, git, docker, leap, hcmut, oracle, mysql, bootstrap, f1, survey, quality } from "../assets";
 
 export const navLinks = [
   {
@@ -21,16 +21,8 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -60,8 +52,8 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "Node JS",
@@ -72,16 +64,16 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Oracle",
+    icon: oracle,
+  },
+  {
+    name: "mySQL",
+    icon: mysql,
   },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -91,53 +83,30 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Intern Full-Stack Web Developer",
+    company_name: "LEAP",
+    icon: leap,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2021 - December 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Learn about the Java programming language",
+      "Learn about SpringBoot framework",
+      "Developing simple web application has CRUD with Jhipster( React, SpringBoot).",
+      "Developing and maintaining slack bot using SpringBoot and other related technologies.",
+      "Participating in code reviews with leader and write reports on product features.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Fresher Full-Stack Web Developer",
+    company_name: "Data and Information Technology Center of Ho Chi Minh City University of Technology",
+    icon: hcmut,
+    iconBg: "#F8F6F4",
+    date: "July 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Building a quality assurance system for Office for International Study Programs (OISP) in Ho Chi Minh City University of Technology.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Participate in analysis, record and clarify user's business requirements, propose solutions to deploy the system.",
+      "Check and handle arising errors as well as optimize the system during operation",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -173,68 +142,113 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Survey of Quality Assurance System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      'Web application that enables users to CRUD question of survey, Send an email to participate in the survey, Send automatic email reminders to take surveys, Dashboard to track results year by year, Statistics and extracting results into reports...',
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "oracle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "rabbitMQ",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: survey,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "ISO Management of Quality Assurance System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to CRUD quality goals, Send email to office employees, Send automatic email reminders to input data of quality goals, Dashboard to track quality goal, Statistics and extracting data into reports...",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
+        name: "redux",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "oracle",
+        color: "green-text-gradient",
+      },
+      {
+        name: "redis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "rabbitMQ",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: quality,
     source_code_link: "https://github.com/",
   },
+  {
+    name: "Formula1 Race REST API Result",
+    description:
+      "My persional project. It's a REST API that displays content crawled from the F1 racing results at RACE RESULTS that allows searching for contents by year, driver, team, race, etc., using the results of the crawling, allow searching using various conditions (like the yearly ranking of specific teams/drivers, etc.).",
+    tags: [
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prismaORM",
+        color: "green-text-gradient",
+      },
+      {
+        name: "sqlLite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: f1,
+    source_code_link: "https://github.com/duyhuynh99/Formular1API",
+  },
+  // {
+  //   name: "Trip Guide",
+  //   description:
+  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //   tags: [
+  //     {
+  //       name: "nextjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "supabase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: tripguide,
+  //   source_code_link: "https://github.com/",
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
