@@ -29,7 +29,7 @@ import hcmut from "./company/hcmut.png";
 
 import survey from "./survey.png";
 import quality from "./quality.png";
-import f1 from "./f1.PNG";
+import f1 from "./f11.png";
 
 export {
   logo,
