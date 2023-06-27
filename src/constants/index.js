@@ -78,7 +78,7 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
-  },
+  },  
 ];
 
 const experiences = [
