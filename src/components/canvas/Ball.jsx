@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import {Decal,Float, OrbitControls,Preload,useTexture,} from "@react-three/drei";
+import { Decal, Float, OrbitControls, Preload, useTexture, } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
@@ -12,7 +12,7 @@ const Ball = (props) => {
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
-      <directionalLight position={[0.001,0.001, 0.05]} />
+      <directionalLight position={[0.001, 0.001, 0.05]} />
       <mesh castShadow receiveShadow scale={2.9}>
         <icosahedronGeometry args={[1.0, 2]} />
         <meshStandardMaterial
@@ -35,16 +35,11 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1.00, 2.00]}
-      gl={{ preserveDrawingBuffer: false }}
-    >
+    <Canvas frameloop='demand' dpr={[1.00, 2.00]} gl={{ preserveDrawingBuffer: false, powerPreference: "high-performance", }}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
-
       <Preload all />
     </Canvas>
   );

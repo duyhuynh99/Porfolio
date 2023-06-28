@@ -2,15 +2,14 @@
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
+import { OrbitControls, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
-    <mesh>
+    <group>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
@@ -27,7 +26,7 @@ const Computers = ({ isMobile }) => {
         position={isMobile ? [0, -3, -2.2] : [0, -3.2, -1.5]}
         rotation={[-0.01, -0.3, -0.12]}
       />
-    </mesh>
+    </group>
   );
 };
 
@@ -56,15 +55,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true,
-        powerPreference: "high-performance", // Chọn hiệu năng cao
-        }}
-    >
+    <Canvas frameloop='demand' shadows dpr={[1, 2]} camera={{ position: [20, 3, 5], fov: 25 }} gl={{ preserveDrawingBuffer: true,powerPreference: "high-performance",}}>
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
@@ -73,8 +64,6 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
-      
     </Canvas>
   );
 };
