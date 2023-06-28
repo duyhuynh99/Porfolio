@@ -1,12 +1,22 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/no-unknown-property */
 import { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  const { gl } = useThree();
+
+  useEffect(() => {
+    // Cleanup function to dispose of the GLTF loader and release resources
+    return () => {
+      computer.dispose();
+      gl.dispose();
+    };
+  }, [computer, gl]);
 
   return (
     <group>
