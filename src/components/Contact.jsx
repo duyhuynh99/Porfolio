@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_gqdcrg2',
-        'template_wag95fk',
+        'service_kxe92lo',
+        'template_bzoach9',
         {
           from_name: form.name,
           to_name: "Trường Duy",
@@ -42,7 +42,7 @@ const Contact = () => {
           to_email: "truongduy0412bku@gmail.com",
           message: form.message,
         },
-        'IeVBSGjkc91III-vS'
+        'uPiRwD7E5ehXW667h'
       )
       .then(
         () => {
