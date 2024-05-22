@@ -18,9 +18,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Duy</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>
-            I graduated from Ho Chi Minh City University of Technology - HCMUT with a major in computer science. <br className='sm:block hidden' />
-            Now I develop web applications with NodeJS
-          </p>
+            I graduated from Ho Chi Minh City University of Technology - HCMUT with a major in computer science <br className='sm:block hidden' />
+            I currently develop web applications using React for frontend and NodeJS, Java Spring for backend</p>
         </div>
       </div>
 

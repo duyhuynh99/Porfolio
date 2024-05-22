@@ -1,4 +1,4 @@
-import { backend, web, javascript, typescript, html, css, reactjs, redux, nodejs, mongodb, git, docker, leap, hcmut, oracle, mysql, bootstrap, f1, survey, quality } from "../assets";
+import { backend, web, java , javascript, typescript, html, css, reactjs, redux, nodejs,spring, mongodb, redis, k8s, kafka, rabbit, git, docker, leap, acb, hcmut, oracle, mysql, bootstrap, f1, survey, quality } from "../assets";
 
 export const navLinks = [
   {
@@ -28,11 +28,11 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
   {
@@ -44,11 +44,15 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "ReactJS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "Redux",
     icon: redux,
   },
   {
@@ -56,8 +60,24 @@ const technologies = [
     icon: bootstrap,
   },
   {
-    name: "Node JS",
+    name: "NodeJS",
     icon: nodejs,
+  },
+  {
+    name: "Spring",
+    icon: spring,
+  },
+  {
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "RabbitMQ",
+    icon: rabbit,
+  },
+  {
+    name: "Kafka",
+    icon: kafka,
   },
   {
     name: "MongoDB",
@@ -72,36 +92,43 @@ const technologies = [
     icon: mysql,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
-  },  
+  },
+  {
+    name: "Kubernetes",
+    icon: k8s,
+  },
 ];
 
 const experiences = [
+
   {
-    title: "Intern Full-Stack Web Developer",
-    company_name: "LEAP",
-    icon: leap,
-    iconBg: "#383E56",
-    date: "August 2021 - December 2021",
+    title: "Backend Java Developer",
+    company_name: "Asia Commercial Bank(ACB)",
+    icon: acb,
+    iconBg: "#F8F6F4",
+    date: "August 2023 -  Present",
     points: [
-      "Learn about the Java programming language",
-      "Learn about SpringBoot framework",
-      "Developing simple web application has CRUD with Jhipster( React, SpringBoot).",
-      "Developing and maintaining slack bot using SpringBoot and other related technologies.",
-      "Participating in code reviews with leader and write reports on product features.",
+      "Building Payment School Fee System, Integrate EVNCPC and BWACO bill payment.",
+      "Work directly with Tech Leader and Product Owner to determine the system’s roadmap and tasks. Build features and improvements based on the roadmap.",
+      "Design a database for uploading and exporting many types of data templates.",
+      "Read and analyze connection documents from partners, then integrate them into the system.",
+      "Participate in code, technology and banking reviews.",
+      "Check and handle arising errors as well as optimize the system during testing and operation.",
     ],
   },
+  
   {
-    title: "Fresher Full-Stack Web Developer",
+    title: "Full-Stack Web Developer",
     company_name: "Data and Information Technology Center of Ho Chi Minh City University of Technology",
     icon: hcmut,
     iconBg: "#F8F6F4",
-    date: "July 2022 - Present",
+    date: "March 2022 - August 2023",
     points: [
       "Building a quality assurance system for Office for International Study Programs (OISP) in Ho Chi Minh City University of Technology.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -109,6 +136,21 @@ const experiences = [
       "Check and handle arising errors as well as optimize the system during operation",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+
+  {
+    title: "Intern Full-Stack Web Developer",
+    company_name: "LEAP",
+    icon: leap,
+    iconBg: "#383E56",
+    date: "2020 -  2021",
+    points: [
+      "Learn about the Java programming language",
+      "Learn about SpringBoot framework",
+      "Developing simple web application has CRUD with Jhipster( React, SpringBoot).",
+      "Developing and maintaining slack bot using SpringBoot and other related technologies.",
+      "Participating in code reviews with leader and write reports on product features.",
     ],
   },
 ];

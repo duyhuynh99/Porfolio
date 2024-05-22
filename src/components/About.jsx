@@ -41,15 +41,14 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)}className='mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]'>
-        I'm a Full-Stack engineer(NodeJS) has 1 year of experience working in this position as well as nearly 1.5 years of
-        experience in developing applications with the position of Full-Stack Engineer, and expertise in frameworks like ReactJS, Express.
+      <motion.p variants={fadeIn("", "", 0.1, 1)}className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'>
+        Drawing from my 3 years of experience as a Software Engineer, I have specialized in Full Stack ReactJS and NodeJS web development for 1.5 years. Additionally, I have garnered extensive hands-on experience in Java SpringBoot, particularly within the banking sector. With a comprehensive understanding of software development principles and significant working experience, I am dedicated to crafting innovative solutions and optimizing system performance to drive impactful outcomes.
         I'm a quick learner and collaborate closely with other developer to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-20'>
+      <div className='mt-20 flex flex-wrap gap-20 '>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

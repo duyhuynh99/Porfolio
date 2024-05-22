@@ -15,24 +15,27 @@ function App() {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <div className='bg-site-bg bg-cover bg-no-repeat bg-center'>
           <Suspense fallback={null}>
             <Navbar />
-            <Hero />
           </Suspense>
-        </div>
-        <Suspense fallback={null}>
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-        </Suspense>
-        {/* <Feedbacks /> */}
-        <div className='relative z-0'>
+          <div className='relative z-0'>
           <Suspense fallback={null}>
-            <Contact />
-            <StarsCanvas />
+            <Hero />
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
+            {/* <Contact /> */}
+            <StarsCanvas size={0.0015}/>
+            <div className='relative z-0'>
+            <Suspense fallback={null}>
+              <Contact />
+              <StarsCanvas size={0.0025} />
+            </Suspense>
+          </div>
           </Suspense>
+          </div>
         </div>
       </div>
     </BrowserRouter>
