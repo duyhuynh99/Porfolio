@@ -21,22 +21,22 @@ function App() {
             <Navbar />
           </Suspense>
           <div className='relative z-0'>
-          <Suspense fallback={null}>
+
             <Hero />
             <About />
             <Experience />
             <Tech />
             <Works />
-            {/* <Contact /> */}
-            <StarsCanvas size={0.0015}/>
-          </Suspense>
+            <Contact />
+            <StarsCanvas size={0.0015} item={2000}/>
+  
           </div>
-          <div className='relative z-0'>
+          {/* <div className='relative z-0'>
             <Suspense fallback={null}>
               <Contact />
-              <StarsCanvasLazy size={0.005} />
+              <StarsCanvasLazy size={0.004} item={1500} />
             </Suspense>
-          </div>
+          </div> */}
         </div>
       </div>
     </BrowserRouter>
