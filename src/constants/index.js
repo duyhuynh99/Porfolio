@@ -156,38 +156,12 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
     name: "Survey of Quality Assurance System",
     description:
-      'Web application that enables users to CRUD question of survey, Send an email to participate in the survey, Send automatic email reminders to take surveys, Dashboard to track results year by year, Statistics and extracting results into reports...',
+      'Web application that enables users to manage survey, question. Send an email to participate in the survey, Send automatic email reminders to take surveys, Dashboard to track results year by year, Statistics and extracting results into reports...',
     tags: [
       {
         name: "react",
@@ -215,12 +189,12 @@ const projects = [
       },
     ],
     image: survey,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://drive.google.com/drive/folders/1geFlDdl3m-3dwD7Mp-6NYpAqKGCQ7R82?usp=sharing",
   },
   {
-    name: "ISO Management of Quality Assurance System",
+    name: "ISO of Quality Assurance System",
     description:
-      "Web application that enables users to CRUD quality goals, Send email to office employees, Send automatic email reminders to input data of quality goals, Dashboard to track quality goal, Statistics and extracting data into reports...",
+      "Web application that enables users to manage quality goals, Send email to office employees, Send automatic email reminders to input data of quality goals, Dashboard to track quality goal, Statistics and extracting data into reports...",
     tags: [
       {
         name: "react",
@@ -248,7 +222,7 @@ const projects = [
       },
     ],
     image: quality,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://drive.google.com/drive/folders/1wtKguls_i4ySdeUWtRZbtHR7Vlk5GZ-K?usp=sharing",
   },
   {
     name: "Formula1 Race REST API Result",
@@ -294,4 +268,4 @@ const projects = [
   // },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

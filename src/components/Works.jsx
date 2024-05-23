@@ -3,12 +3,15 @@ import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github ,drive} from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({index,name,description,tags,image,source_code_link,}) => {
+
+  const nameOfDriveLink=['ISO of Quality Assurance System','Survey of Quality Assurance System'];
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -17,9 +20,9 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link,}) => {
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[520px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-full'>
           <img
             src={image}
             alt='project_image'
@@ -32,7 +35,7 @@ const ProjectCard = ({index,name,description,tags,image,source_code_link,}) => {
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={nameOfDriveLink.includes(name)?drive:github}
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
@@ -81,7 +84,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7 '>
+      <div className='mt-20 flex justify-left flex-wrap gap-7 '>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
