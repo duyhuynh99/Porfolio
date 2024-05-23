@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { backend, web, java , javascript, typescript, html, css, reactjs, redux, nodejs,spring, mongodb, redis, k8s, kafka, rabbit, git, docker, leap, acb, hcmut, oracle, mysql, bootstrap, f1, survey, quality } from "../assets";
 
 export const navLinks = [
@@ -79,10 +80,10 @@ const technologies = [
     name: "Kafka",
     icon: kafka,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
   {
     name: "Oracle",
     icon: oracle,

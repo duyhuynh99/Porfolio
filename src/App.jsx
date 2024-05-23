@@ -2,6 +2,7 @@ import { BrowserRouter } from 'react-router-dom';
 import  { lazy, Suspense } from 'react';
 import { StarsCanvas } from './components';
 // Import các component cần lazy load
+const StarsCanvasLazy = lazy(() => import('./components/canvas/Stars'));
 const Navbar = lazy(() => import('./components/Navbar'));
 const Hero = lazy(() => import('./components/Hero'));
 const About = lazy(() => import('./components/About'));
@@ -27,14 +28,14 @@ function App() {
             <Tech />
             <Works />
             {/* <Contact /> */}
-            {/* <StarsCanvas size={0.0015}/> */}
-            <div className='relative z-0'>
+            <StarsCanvas size={0.0015}/>
+          </Suspense>
+          </div>
+          <div className='relative z-0'>
             <Suspense fallback={null}>
               <Contact />
-              <StarsCanvas size={0.0025} />
+              <StarsCanvasLazy size={0.0025} />
             </Suspense>
-          </div>
-          </Suspense>
           </div>
         </div>
       </div>
