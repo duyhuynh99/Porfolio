@@ -24,7 +24,7 @@ function App() {
           <Suspense fallback={null}>
             <Hero />
             <About />
-            <StarsCanvasLazy size={0.0015} item={1500}/>
+            <StarsCanvasLazy size={0.002} item={600}/>
           </Suspense>
           </div>
 
@@ -32,14 +32,14 @@ function App() {
             <Suspense fallback={null}>
               <Experience />
               <Tech />
-              <StarsCanvasLazy size={0.0015} item={1500} />
+              <StarsCanvasLazy size={0.0015} item={800} />
             </Suspense>
           </div>
           <div className='relative z-0'>
             <Suspense fallback={null}>
               <Works />
               <Contact />
-              <StarsCanvasLazy size={0.0015} item={1500} />
+              <StarsCanvasLazy size={0.0015} item={1200} />
             </Suspense>
           </div>
         </div>
