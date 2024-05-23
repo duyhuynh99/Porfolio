@@ -31,11 +31,6 @@ function App() {
             <Suspense fallback={null}>
               <Experience />
               <Tech />
-              <StarsCanvas size={0.0015} item={600} />
-            </Suspense>
-          </div>
-          <div className='relative z-0'>
-            <Suspense fallback={null}>
               <Works />
               <Contact />
               <StarsCanvas size={0.0015} item={800} />
