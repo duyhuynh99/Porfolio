@@ -34,7 +34,7 @@ function App() {
           <div className='relative z-0'>
             <Suspense fallback={null}>
               <Contact />
-              <StarsCanvasLazy size={0.0025} />
+              <StarsCanvasLazy size={0.005} />
             </Suspense>
           </div>
         </div>
