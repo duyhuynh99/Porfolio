@@ -18,22 +18,17 @@ function App() {
         <div className='bg-site-bg bg-cover bg-no-repeat bg-center'>
           <Suspense fallback={null}>
             <Navbar />
-            <Hero />
           </Suspense>
-          <div className='relative z-0'>
-          <Suspense fallback={null}>
-            <About />
-            <StarsCanvas size={0.0015} item={400}/>
-          </Suspense>
-          </div>
 
           <div className='relative z-0'>
             <Suspense fallback={null}>
+              <Hero />
+              <About />
               <Experience />
               <Tech />
               <Works />
               <Contact />
-              <StarsCanvas size={0.0015} item={800} />
+              <StarsCanvas size={0.002} item={250} />
             </Suspense>
           </div>
         </div>
