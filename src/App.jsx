@@ -27,7 +27,7 @@ function App() {
             <Tech />
             <Works />
             {/* <Contact /> */}
-            <StarsCanvas size={0.0015}/>
+            {/* <StarsCanvas size={0.0015}/> */}
             <div className='relative z-0'>
             <Suspense fallback={null}>
               <Contact />
